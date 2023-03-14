@@ -1,10 +1,13 @@
- ##  Odev 2: Password-Generator-Undo-Button
+ ##  HM 2: Password Generator-Undo Button
  
-PaswordGenerator uygulamamızdaki kullanıcı deneyimini iyileştirmek için uygulamamıza bir tane undo (geri alma) özelliği eklememiz gerekiyor.   
+In this assignment, the goal is to add an undo button feature to improve the user experience in Password Generator.
 
-1. Kullanıcılar uygulama başladıktan sonra oluşturdukları tüm şifreleri undo butonunu kullanılarak, ilk şifreye kadar geriye alınabilmelidirler. Örn: Sayfa ilk açıldığında oluşturulan ilk şifre “m0x21k” ise, kullanıcı 20 tane daha şifre oluşturduktan sonra “undo” butonunu kullanarak “m0x21k” şifresine kadar geriye gidebilmelidir.
+### Requirements
 
-2. Eğer geri alma işlemi yapabilmek adına geri alınabilecek bir şifre bulunmuyor ise, (mesela ilk şifreyi oluşturduğumuz kısımdayız veya ilk şifreye kadar her şeyi geri aldık.) o zaman “undo” butonu gri renkte ve tıklanamaz (deaktif) olmalıdır.
+- Users should be able to retrieve all the passwords they have created after the application has started, up to the first password by using the undo button.
+For example: If the first password created when the page is first opened is "m0x21k", the user should be able to go back to the "m0x21k" password by using the "undo" button after creating 20 more passwords.
 
-3. Undo (geri alma) mekanizması ilk kez böyle bir challange ile karşılaştığınızda kafa karıştırıcı olabilir. Bu yüzden ödevimizdeki işlemlerimiz için “Memento Pattern” adlı tasarım desenine göz atarak fikir edinmenizi öneririm.
+- If there is no password that can be retrieved in order to be able to retrieve it (for example, we are in the part where we created the first password or we have recovered everything until the first password.) then the “undo” button should be grayed out and unclickable (deactivate).
+
+
 
