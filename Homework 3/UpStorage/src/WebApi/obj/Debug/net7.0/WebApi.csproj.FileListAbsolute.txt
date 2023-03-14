@@ -1,0 +1,14 @@
+C:\Users\zy_ya_000\Desktop\p\UpSchool-TheBasics-master\UpStorage\src\WebApi\obj\Debug\net7.0\WebApi.csproj.AssemblyReference.cache
+C:\Users\zy_ya_000\Desktop\p\UpSchool-TheBasics-master\UpStorage\src\WebApi\obj\Debug\net7.0\WebApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\zy_ya_000\Desktop\p\UpSchool-TheBasics-master\UpStorage\src\WebApi\obj\Debug\net7.0\WebApi.AssemblyInfoInputs.cache
+C:\Users\zy_ya_000\Desktop\p\UpSchool-TheBasics-master\UpStorage\src\WebApi\obj\Debug\net7.0\WebApi.AssemblyInfo.cs
+C:\Users\zy_ya_000\Desktop\p\UpSchool-TheBasics-master\UpStorage\src\WebApi\obj\Debug\net7.0\WebApi.csproj.CoreCompileInputs.cache
+C:\Users\zy_ya_000\Desktop\p\UpSchool-TheBasics-master\UpStorage\src\WebApi\obj\Debug\net7.0\WebApi.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\zy_ya_000\Desktop\p\UpSchool-TheBasics-master\UpStorage\src\WebApi\obj\Debug\net7.0\WebApi.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\zy_ya_000\Desktop\UP\UpSchool-FullStack-Development-Bootcamp\Homework 3\UpStorage\src\WebApi\obj\Debug\net7.0\WebApi.csproj.AssemblyReference.cache
+C:\Users\zy_ya_000\Desktop\UP\UpSchool-FullStack-Development-Bootcamp\Homework 3\UpStorage\src\WebApi\obj\Debug\net7.0\WebApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\zy_ya_000\Desktop\UP\UpSchool-FullStack-Development-Bootcamp\Homework 3\UpStorage\src\WebApi\obj\Debug\net7.0\WebApi.AssemblyInfoInputs.cache
+C:\Users\zy_ya_000\Desktop\UP\UpSchool-FullStack-Development-Bootcamp\Homework 3\UpStorage\src\WebApi\obj\Debug\net7.0\WebApi.AssemblyInfo.cs
+C:\Users\zy_ya_000\Desktop\UP\UpSchool-FullStack-Development-Bootcamp\Homework 3\UpStorage\src\WebApi\obj\Debug\net7.0\WebApi.csproj.CoreCompileInputs.cache
+C:\Users\zy_ya_000\Desktop\UP\UpSchool-FullStack-Development-Bootcamp\Homework 3\UpStorage\src\WebApi\obj\Debug\net7.0\WebApi.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\zy_ya_000\Desktop\UP\UpSchool-FullStack-Development-Bootcamp\Homework 3\UpStorage\src\WebApi\obj\Debug\net7.0\WebApi.MvcApplicationPartsAssemblyInfo.cache

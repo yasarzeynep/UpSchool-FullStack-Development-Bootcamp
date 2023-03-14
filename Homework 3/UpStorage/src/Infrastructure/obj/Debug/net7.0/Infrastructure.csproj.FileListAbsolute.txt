@@ -1,0 +1,38 @@
+C:\Users\zy_ya_000\Desktop\p\UpSchool-TheBasics-master\UpStorage\src\Infrastructure\obj\Debug\net7.0\Infrastructure.csproj.AssemblyReference.cache
+C:\Users\zy_ya_000\Desktop\p\UpSchool-TheBasics-master\UpStorage\src\Infrastructure\obj\Debug\net7.0\Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\zy_ya_000\Desktop\p\UpSchool-TheBasics-master\UpStorage\src\Infrastructure\obj\Debug\net7.0\Infrastructure.AssemblyInfoInputs.cache
+C:\Users\zy_ya_000\Desktop\p\UpSchool-TheBasics-master\UpStorage\src\Infrastructure\obj\Debug\net7.0\Infrastructure.AssemblyInfo.cs
+C:\Users\zy_ya_000\Desktop\p\UpSchool-TheBasics-master\UpStorage\src\Infrastructure\obj\Debug\net7.0\Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\zy_ya_000\Desktop\p\UpSchool-TheBasics-master\UpStorage\src\Infrastructure\bin\Debug\net7.0\Infrastructure.deps.json
+C:\Users\zy_ya_000\Desktop\p\UpSchool-TheBasics-master\UpStorage\src\Infrastructure\bin\Debug\net7.0\Infrastructure.runtimeconfig.json
+C:\Users\zy_ya_000\Desktop\p\UpSchool-TheBasics-master\UpStorage\src\Infrastructure\bin\Debug\net7.0\Infrastructure.dll
+C:\Users\zy_ya_000\Desktop\p\UpSchool-TheBasics-master\UpStorage\src\Infrastructure\bin\Debug\net7.0\Infrastructure.pdb
+C:\Users\zy_ya_000\Desktop\p\UpSchool-TheBasics-master\UpStorage\src\Infrastructure\bin\Debug\net7.0\Application.dll
+C:\Users\zy_ya_000\Desktop\p\UpSchool-TheBasics-master\UpStorage\src\Infrastructure\bin\Debug\net7.0\Domain.dll
+C:\Users\zy_ya_000\Desktop\p\UpSchool-TheBasics-master\UpStorage\src\Infrastructure\bin\Debug\net7.0\Application.pdb
+C:\Users\zy_ya_000\Desktop\p\UpSchool-TheBasics-master\UpStorage\src\Infrastructure\bin\Debug\net7.0\Domain.pdb
+C:\Users\zy_ya_000\Desktop\p\UpSchool-TheBasics-master\UpStorage\src\Infrastructure\obj\Debug\net7.0\Infrastructure.csproj.CopyComplete
+C:\Users\zy_ya_000\Desktop\p\UpSchool-TheBasics-master\UpStorage\src\Infrastructure\obj\Debug\net7.0\Infrastructure.dll
+C:\Users\zy_ya_000\Desktop\p\UpSchool-TheBasics-master\UpStorage\src\Infrastructure\obj\Debug\net7.0\refint\Infrastructure.dll
+C:\Users\zy_ya_000\Desktop\p\UpSchool-TheBasics-master\UpStorage\src\Infrastructure\obj\Debug\net7.0\Infrastructure.pdb
+C:\Users\zy_ya_000\Desktop\p\UpSchool-TheBasics-master\UpStorage\src\Infrastructure\obj\Debug\net7.0\Infrastructure.genruntimeconfig.cache
+C:\Users\zy_ya_000\Desktop\p\UpSchool-TheBasics-master\UpStorage\src\Infrastructure\obj\Debug\net7.0\ref\Infrastructure.dll
+C:\Users\zy_ya_000\Desktop\UP\UpSchool-FullStack-Development-Bootcamp\Homework 3\UpStorage\src\Infrastructure\bin\Debug\net7.0\Infrastructure.deps.json
+C:\Users\zy_ya_000\Desktop\UP\UpSchool-FullStack-Development-Bootcamp\Homework 3\UpStorage\src\Infrastructure\bin\Debug\net7.0\Infrastructure.runtimeconfig.json
+C:\Users\zy_ya_000\Desktop\UP\UpSchool-FullStack-Development-Bootcamp\Homework 3\UpStorage\src\Infrastructure\bin\Debug\net7.0\Infrastructure.dll
+C:\Users\zy_ya_000\Desktop\UP\UpSchool-FullStack-Development-Bootcamp\Homework 3\UpStorage\src\Infrastructure\bin\Debug\net7.0\Infrastructure.pdb
+C:\Users\zy_ya_000\Desktop\UP\UpSchool-FullStack-Development-Bootcamp\Homework 3\UpStorage\src\Infrastructure\bin\Debug\net7.0\Application.dll
+C:\Users\zy_ya_000\Desktop\UP\UpSchool-FullStack-Development-Bootcamp\Homework 3\UpStorage\src\Infrastructure\bin\Debug\net7.0\Domain.dll
+C:\Users\zy_ya_000\Desktop\UP\UpSchool-FullStack-Development-Bootcamp\Homework 3\UpStorage\src\Infrastructure\bin\Debug\net7.0\Application.pdb
+C:\Users\zy_ya_000\Desktop\UP\UpSchool-FullStack-Development-Bootcamp\Homework 3\UpStorage\src\Infrastructure\bin\Debug\net7.0\Domain.pdb
+C:\Users\zy_ya_000\Desktop\UP\UpSchool-FullStack-Development-Bootcamp\Homework 3\UpStorage\src\Infrastructure\obj\Debug\net7.0\Infrastructure.csproj.AssemblyReference.cache
+C:\Users\zy_ya_000\Desktop\UP\UpSchool-FullStack-Development-Bootcamp\Homework 3\UpStorage\src\Infrastructure\obj\Debug\net7.0\Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\zy_ya_000\Desktop\UP\UpSchool-FullStack-Development-Bootcamp\Homework 3\UpStorage\src\Infrastructure\obj\Debug\net7.0\Infrastructure.AssemblyInfoInputs.cache
+C:\Users\zy_ya_000\Desktop\UP\UpSchool-FullStack-Development-Bootcamp\Homework 3\UpStorage\src\Infrastructure\obj\Debug\net7.0\Infrastructure.AssemblyInfo.cs
+C:\Users\zy_ya_000\Desktop\UP\UpSchool-FullStack-Development-Bootcamp\Homework 3\UpStorage\src\Infrastructure\obj\Debug\net7.0\Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\zy_ya_000\Desktop\UP\UpSchool-FullStack-Development-Bootcamp\Homework 3\UpStorage\src\Infrastructure\obj\Debug\net7.0\Infrastructure.csproj.CopyComplete
+C:\Users\zy_ya_000\Desktop\UP\UpSchool-FullStack-Development-Bootcamp\Homework 3\UpStorage\src\Infrastructure\obj\Debug\net7.0\Infrastructure.dll
+C:\Users\zy_ya_000\Desktop\UP\UpSchool-FullStack-Development-Bootcamp\Homework 3\UpStorage\src\Infrastructure\obj\Debug\net7.0\refint\Infrastructure.dll
+C:\Users\zy_ya_000\Desktop\UP\UpSchool-FullStack-Development-Bootcamp\Homework 3\UpStorage\src\Infrastructure\obj\Debug\net7.0\Infrastructure.pdb
+C:\Users\zy_ya_000\Desktop\UP\UpSchool-FullStack-Development-Bootcamp\Homework 3\UpStorage\src\Infrastructure\obj\Debug\net7.0\Infrastructure.genruntimeconfig.cache
+C:\Users\zy_ya_000\Desktop\UP\UpSchool-FullStack-Development-Bootcamp\Homework 3\UpStorage\src\Infrastructure\obj\Debug\net7.0\ref\Infrastructure.dll
