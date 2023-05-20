@@ -5,6 +5,6 @@ This repo contains assignments done throughout the UP School Full Stack Develope
 ### HM 1: Password Generator
 ### HM 2: Password Generator-Undo Button
 ### HM 3: UpStorage-CQRS Design Pattern
-### HM 4: UnitTesting
+### HM 4: Unit Testing
 
 [UP School](https://www.upschool.io/)
