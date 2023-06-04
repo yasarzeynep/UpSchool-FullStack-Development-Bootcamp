@@ -1,4 +1,4 @@
- ##  HM 2: Password Generator-Undo Button
+ ## Project 2: Password Generator-Undo Button
  
 In this assignment, the goal is to add an undo button feature to improve the user experience in Password Generator.
 
