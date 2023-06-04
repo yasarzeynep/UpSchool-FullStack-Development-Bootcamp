@@ -164,7 +164,7 @@ namespace UpSchool.Domain.Tests.Services
             List<User> userList = new List<User>()
             {
                 new User(){ Id = Guid.NewGuid() },
-               
+               // new User(){ Id = Guid.NewGuid(),FirstName = "Zeynep", LastName = "Yasar", Age = 28, Email = "zynpsema@gmail.com" },
 
             };
 

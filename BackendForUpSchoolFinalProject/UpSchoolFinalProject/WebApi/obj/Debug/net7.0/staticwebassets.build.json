@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "sBgz44qk9pchsxLDek+NGgmMRwHIWo7ltjBPt3OzBoo=",
+  "Source": "WebApi",
+  "BasePath": "_content/WebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "WebApi\\wwwroot",
+      "Source": "WebApi",
+      "ContentRoot": "C:\\Users\\zy_ya_000\\Desktop\\bugun\\finalprojeyedek\\UpSchoolFinalProject\\WebApi\\wwwroot\\",
+      "BasePath": "_content/WebApi",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\zy_ya_000\\Desktop\\bugun\\finalprojeyedek\\UpSchoolFinalProject\\WebApi\\wwwroot\\email_templates\\email_confirmation.html",
+      "SourceId": "WebApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\zy_ya_000\\Desktop\\bugun\\finalprojeyedek\\UpSchoolFinalProject\\WebApi\\wwwroot\\",
+      "BasePath": "_content/WebApi",
+      "RelativePath": "email_templates/email_confirmation.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\email_templates\\email_confirmation.html"
+    }
+  ]
+}
