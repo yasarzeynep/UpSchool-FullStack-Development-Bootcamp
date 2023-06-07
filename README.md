@@ -1,7 +1,7 @@
 # UpSchool-FullStack-Development-Bootcamp
 This repo contains assignments done throughout the UP School Full Stack Developer Program.
 
-## UP School Homeworks
+## UP School Homework Projects
 ### Project 1: Password Generator
 ### Project 2: Password Generator-Undo Button
 ### Project 3: UpStorage-CQRS Design Pattern
