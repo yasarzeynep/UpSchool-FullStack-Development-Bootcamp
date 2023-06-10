@@ -6,6 +6,7 @@ This repo contains assignments done throughout the UP School Full Stack Develope
 ### Project 2: Password Generator-Undo Button
 ### Project 3: UpStorage-CQRS Design Pattern
 ### Project 4: Unit Testing
+### Project 5: React & TypeScript Todo Application
 ### Project Final: Backend for Final Project
 
 [UP School](https://www.upschool.io/)
