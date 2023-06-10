@@ -1,4 +1,4 @@
-# HM 4: Unit Testing
+# Project 4: Unit Testing
 The method headings of the Unit Testing homework are as follows.
 - AddAsync_ShouldThrowException_WhenEmailIsEmptyOrNull()
 - AddAsync_ShouldReturn_CorrectUserId()

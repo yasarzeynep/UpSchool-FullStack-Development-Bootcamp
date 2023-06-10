@@ -1,4 +1,4 @@
-# HM 1: Password Generator
+# Project 1: Password Generator
 
 The goal in this application is to generate a random password suitable for the user's preferences.
 - The user should be able to create a password by combining different combinations of characters specified in the following groups.
