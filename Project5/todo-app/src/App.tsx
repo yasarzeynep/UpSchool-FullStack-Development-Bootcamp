@@ -1,8 +1,14 @@
 import React, { useState } from 'react';
 import './App.css';
 
+interface TodoItem {
+    id: string;
+    text: string;
+    date: Date;
+}
+
 function App() {
-    const [todos, setTodos] = useState<string[]>([]);
+    const [todos, setTodos] = useState<TodoItem[]>([]);
     const [inputValue, setInputValue] = useState('');
 
     const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -11,21 +17,18 @@ function App() {
 
     const handleAddTodo = () => {
         if (inputValue.trim() !== '') {
-            setTodos([...todos, inputValue]);
+            const newTodo: TodoItem = {
+                id: String(Date.now()),
+                text: inputValue.substring(0, 250),
+                date: new Date(),
+            };
+            setTodos([...todos, newTodo]);
             setInputValue('');
         }
     };
 
-    const handleToggleTodo = (index: number) => {
-        const updatedTodos = [...todos];
-        updatedTodos[index] = updatedTodos[index].startsWith('✅ ')
-            ? updatedTodos[index].substring(2)
-            : `✅ ${updatedTodos[index]}`;
-        setTodos(updatedTodos);
-    };
-
-    const handleDeleteTodo = (index: number) => {
-        const updatedTodos = todos.filter((_, i) => i !== index);
+    const handleDeleteTodo = (id: string) => {
+        const updatedTodos = todos.filter((todo) => todo.id !== id);
         setTodos(updatedTodos);
     };
 
@@ -42,20 +45,21 @@ function App() {
                     />
                     <button onClick={handleAddTodo}>Add</button>
                 </div>
-                <ul className="todos-list">
-                    {todos.map((todo, index) => (
-                        <li
-                            key={index}
-                            className={`todo-item ${todo.startsWith('✅ ') ? 'completed' : ''}`}
-                            onClick={() => handleToggleTodo(index)}
-                        >
-                            {todo}
-                            <span className="delete-icon" onClick={() => handleDeleteTodo(index)}>
+                <div className="todos-list">
+                    <div className="todo-header">
+                        <span className="todo-header-text">Todo</span>
+                        <span className="todo-header-text">Date</span>
+                    </div>
+                    {todos.map((todo) => (
+                        <div key={todo.id} className="todo-item">
+                            <span className="todo-text">{todo.text}</span>
+                            <span className="todo-date">{todo.date.toLocaleString()}</span>
+                            <span className="delete-icon" onClick={() => handleDeleteTodo(todo.id)}>
                 🗑️
               </span>
-                        </li>
+                        </div>
                     ))}
-                </ul>
+                </div>
             </div>
         </div>
     );
