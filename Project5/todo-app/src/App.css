@@ -1,95 +1,97 @@
+/* App.css */
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #f5f5f5;
+    background-color: #ffedb3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 .Todos {
-  max-width: 600px;
-  width: 100%;
-  background-color: #faebd7;
-  padding: 20px;
-  border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+    background-color: #fff7e6;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .todos-title {
-  text-align: center;
-  margin-bottom: 10px;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 .todos-input {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
 }
 
 .todos-input input {
-  flex-grow: 1;
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  margin-right: 10px;
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
 }
 
-.todos-input button {
-  background-color: #4caf50;
-  color: #fff;
-  border: none;
-  padding: 8px 16px;
-  border-radius: 4px;
-  cursor: pointer;
+.add-button {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
-.todos-input button:disabled {
-  background-color: #ccc;
-  cursor: not-allowed;
+.sort-button {
+    background-color: #ffa500;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
 }
 
-.todos-list {
-  display: flex;
-  flex-direction: column;
+.sort-button.active {
+    background-color: #ff7f00;
 }
 
-.todo-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 8px;
-  font-weight: bold;
-  background-color: #f2f2f2;
+.todos-table {
+    width: 100%;
+    border-collapse: collapse;
 }
 
-.todo-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  margin-bottom: 10px;
-  position: relative;
-  word-break: break-word;
+.todos-table th,
+.todos-table td {
+    padding: 8px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+.todos-table th {
+    background-color: #f2f2f2;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #999;
 }
 
 .delete-icon {
-  margin-left: 10px;
-  cursor: pointer;
+    cursor: pointer;
+    text-align: center;
 }
 
-.todo-text {
-  flex-grow: 1;
-  margin-right: 10px;
-}
-
-.todo-date {
-  font-size: 12px;
-  color: #666;
+.quote {
+    text-align: center;
+    margin-top: 20px;
 }
