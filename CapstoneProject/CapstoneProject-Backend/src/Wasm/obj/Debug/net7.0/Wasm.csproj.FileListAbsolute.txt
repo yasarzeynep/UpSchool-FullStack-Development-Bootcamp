@@ -1,0 +1,6 @@
+C:\Users\HERO\Desktop\CapstoneProject\CapstoneProject-Backend\src\Wasm\obj\Debug\net7.0\Wasm.csproj.AssemblyReference.cache
+C:\Users\HERO\Desktop\CapstoneProject\CapstoneProject-Backend\src\Wasm\obj\Debug\net7.0\Wasm.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HERO\Desktop\CapstoneProject\CapstoneProject-Backend\src\Wasm\obj\Debug\net7.0\Wasm.AssemblyInfoInputs.cache
+C:\Users\HERO\Desktop\CapstoneProject\CapstoneProject-Backend\src\Wasm\obj\Debug\net7.0\Wasm.AssemblyInfo.cs
+C:\Users\HERO\Desktop\CapstoneProject\CapstoneProject-Backend\src\Wasm\obj\Debug\net7.0\Wasm.csproj.CoreCompileInputs.cache
+C:\Users\HERO\Desktop\CapstoneProject\CapstoneProject-Backend\src\Wasm\obj\Debug\net7.0\Wasm.MvcApplicationPartsAssemblyInfo.cache
