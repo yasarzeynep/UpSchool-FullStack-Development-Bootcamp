@@ -145,11 +145,11 @@
           "lib/netcoreapp2.0/_._": {}
         }
       },
-      "Microsoft.EntityFrameworkCore/7.0.5": {
+      "Microsoft.EntityFrameworkCore/7.0.9": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.Abstractions": "7.0.5",
-          "Microsoft.EntityFrameworkCore.Analyzers": "7.0.5",
+          "Microsoft.EntityFrameworkCore.Abstractions": "7.0.9",
+          "Microsoft.EntityFrameworkCore.Analyzers": "7.0.9",
           "Microsoft.Extensions.Caching.Memory": "7.0.0",
           "Microsoft.Extensions.DependencyInjection": "7.0.0",
           "Microsoft.Extensions.Logging": "7.0.0"
@@ -168,7 +168,7 @@
           "buildTransitive/net6.0/Microsoft.EntityFrameworkCore.props": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Abstractions/7.0.5": {
+      "Microsoft.EntityFrameworkCore.Abstractions/7.0.9": {
         "type": "package",
         "compile": {
           "lib/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll": {
@@ -181,7 +181,7 @@
           }
         }
       },
-      "Microsoft.EntityFrameworkCore.Analyzers/7.0.5": {
+      "Microsoft.EntityFrameworkCore.Analyzers/7.0.9": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/_._": {}
@@ -641,7 +641,8 @@
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
           "Domain": "1.0.0",
-          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "7.0.5"
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "7.0.5",
+          "Microsoft.EntityFrameworkCore": "7.0.9"
         },
         "compile": {
           "bin/placeholder/Application.dll": {}
@@ -904,10 +905,10 @@
         "version.txt"
       ]
     },
-    "Microsoft.EntityFrameworkCore/7.0.5": {
-      "sha512": "RXbRLHHWP2Z3pq8qcL5nQ6LPeoOyp8hasM5bd0Te8PiQi3RjWQR4tcbdY5XMqQ+oTO9wA8/RLhZRn/hnxlTDnQ==",
+    "Microsoft.EntityFrameworkCore/7.0.9": {
+      "sha512": "9YuCdQWuRAmYYHqwW1h5ukKMC1fmNvcVHdp3gb8zdHxwSQz7hkGpYOBEjm6dRXRmGRkpUyHL8rwUz4kd53Ev0A==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore/7.0.5",
+      "path": "microsoft.entityframeworkcore/7.0.9",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -915,35 +916,35 @@
         "buildTransitive/net6.0/Microsoft.EntityFrameworkCore.props",
         "lib/net6.0/Microsoft.EntityFrameworkCore.dll",
         "lib/net6.0/Microsoft.EntityFrameworkCore.xml",
-        "microsoft.entityframeworkcore.7.0.5.nupkg.sha512",
+        "microsoft.entityframeworkcore.7.0.9.nupkg.sha512",
         "microsoft.entityframeworkcore.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Abstractions/7.0.5": {
-      "sha512": "iwQso+hFRsEWjhH2WsEQj1D2QE5BlEXiXEt6A3SlYTPRPdZsyTNDeDDEdtxL+H/UJPQgQYY+9SMMRcEiXBmCAA==",
+    "Microsoft.EntityFrameworkCore.Abstractions/7.0.9": {
+      "sha512": "cfY6Fn7cnP/5pXndL8QYaey/B2nGn1fwze5aSaMJymmbqwqYzFiszHuWbsdVBCDYJc8ok7eB1m/nCc3/rltulQ==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.abstractions/7.0.5",
+      "path": "microsoft.entityframeworkcore.abstractions/7.0.9",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "lib/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll",
         "lib/net6.0/Microsoft.EntityFrameworkCore.Abstractions.xml",
-        "microsoft.entityframeworkcore.abstractions.7.0.5.nupkg.sha512",
+        "microsoft.entityframeworkcore.abstractions.7.0.9.nupkg.sha512",
         "microsoft.entityframeworkcore.abstractions.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Analyzers/7.0.5": {
-      "sha512": "yMLM/aK1MikVqpjxd7PJ1Pjgztd3VAd26ZHxyjxG3RPeM9cHjvS5tCg9kAAayR6eHmBg0ffZsHdT28WfA5tTlA==",
+    "Microsoft.EntityFrameworkCore.Analyzers/7.0.9": {
+      "sha512": "VvqFD3DdML6LhPCAR/lG2xNX66juylC8v57yUAAYnUSdEUOMRi3lNoT4OrNdG0rere3UOQPhvVl5FH2QdyoF8Q==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.analyzers/7.0.5",
+      "path": "microsoft.entityframeworkcore.analyzers/7.0.9",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "analyzers/dotnet/cs/Microsoft.EntityFrameworkCore.Analyzers.dll",
         "lib/netstandard2.0/_._",
-        "microsoft.entityframeworkcore.analyzers.7.0.5.nupkg.sha512",
+        "microsoft.entityframeworkcore.analyzers.7.0.9.nupkg.sha512",
         "microsoft.entityframeworkcore.analyzers.nuspec"
       ]
     },
@@ -1868,19 +1869,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\zy_ya_000\\.nuget\\packages\\": {}
+    "C:\\Users\\HERO\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\zy_ya_000\\Desktop\\bugun\\finalprojeyedek\\UpSchoolFinalProject\\WebApi\\WebApi.csproj",
+      "projectUniqueName": "C:\\Users\\HERO\\UPrepo\\UpSchool-FullStack-Development-Bootcamp\\BackendForUpSchoolFinalProject\\UpSchoolFinalProject\\WebApi\\WebApi.csproj",
       "projectName": "WebApi",
-      "projectPath": "C:\\Users\\zy_ya_000\\Desktop\\bugun\\finalprojeyedek\\UpSchoolFinalProject\\WebApi\\WebApi.csproj",
-      "packagesPath": "C:\\Users\\zy_ya_000\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\zy_ya_000\\Desktop\\bugun\\finalprojeyedek\\UpSchoolFinalProject\\WebApi\\obj\\",
+      "projectPath": "C:\\Users\\HERO\\UPrepo\\UpSchool-FullStack-Development-Bootcamp\\BackendForUpSchoolFinalProject\\UpSchoolFinalProject\\WebApi\\WebApi.csproj",
+      "packagesPath": "C:\\Users\\HERO\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\HERO\\UPrepo\\UpSchool-FullStack-Development-Bootcamp\\BackendForUpSchoolFinalProject\\UpSchoolFinalProject\\WebApi\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\zy_ya_000\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\HERO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1888,17 +1894,18 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\zy_ya_000\\Desktop\\bugun\\finalprojeyedek\\UpSchoolFinalProject\\Application\\Application.csproj": {
-              "projectPath": "C:\\Users\\zy_ya_000\\Desktop\\bugun\\finalprojeyedek\\UpSchoolFinalProject\\Application\\Application.csproj"
+            "C:\\Users\\HERO\\UPrepo\\UpSchool-FullStack-Development-Bootcamp\\BackendForUpSchoolFinalProject\\UpSchoolFinalProject\\Application\\Application.csproj": {
+              "projectPath": "C:\\Users\\HERO\\UPrepo\\UpSchool-FullStack-Development-Bootcamp\\BackendForUpSchoolFinalProject\\UpSchoolFinalProject\\Application\\Application.csproj"
             },
-            "C:\\Users\\zy_ya_000\\Desktop\\bugun\\finalprojeyedek\\UpSchoolFinalProject\\Infrastructure\\Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\zy_ya_000\\Desktop\\bugun\\finalprojeyedek\\UpSchoolFinalProject\\Infrastructure\\Infrastructure.csproj"
+            "C:\\Users\\HERO\\UPrepo\\UpSchool-FullStack-Development-Bootcamp\\BackendForUpSchoolFinalProject\\UpSchoolFinalProject\\Infrastructure\\Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\HERO\\UPrepo\\UpSchool-FullStack-Development-Bootcamp\\BackendForUpSchoolFinalProject\\UpSchoolFinalProject\\Infrastructure\\Infrastructure.csproj"
             }
           }
         }
@@ -1947,7 +1954,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
       }
     }
   }

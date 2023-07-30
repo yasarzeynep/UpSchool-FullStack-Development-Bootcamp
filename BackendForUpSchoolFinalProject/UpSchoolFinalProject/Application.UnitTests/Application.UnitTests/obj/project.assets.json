@@ -5517,19 +5517,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\zy_ya_000\\.nuget\\packages\\": {}
+    "C:\\Users\\HERO\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\zy_ya_000\\Desktop\\bugun\\finalprojeyedek\\UpSchoolFinalProject\\Application.UnitTests\\Application.UnitTests\\Application.UnitTests.csproj",
+      "projectUniqueName": "C:\\Users\\HERO\\UPrepo\\UpSchool-FullStack-Development-Bootcamp\\BackendForUpSchoolFinalProject\\UpSchoolFinalProject\\Application.UnitTests\\Application.UnitTests\\Application.UnitTests.csproj",
       "projectName": "Application.UnitTests",
-      "projectPath": "C:\\Users\\zy_ya_000\\Desktop\\bugun\\finalprojeyedek\\UpSchoolFinalProject\\Application.UnitTests\\Application.UnitTests\\Application.UnitTests.csproj",
-      "packagesPath": "C:\\Users\\zy_ya_000\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\zy_ya_000\\Desktop\\bugun\\finalprojeyedek\\UpSchoolFinalProject\\Application.UnitTests\\Application.UnitTests\\obj\\",
+      "projectPath": "C:\\Users\\HERO\\UPrepo\\UpSchool-FullStack-Development-Bootcamp\\BackendForUpSchoolFinalProject\\UpSchoolFinalProject\\Application.UnitTests\\Application.UnitTests\\Application.UnitTests.csproj",
+      "packagesPath": "C:\\Users\\HERO\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\HERO\\UPrepo\\UpSchool-FullStack-Development-Bootcamp\\BackendForUpSchoolFinalProject\\UpSchoolFinalProject\\Application.UnitTests\\Application.UnitTests\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\zy_ya_000\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\HERO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5592,7 +5597,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
       }
     }
   }

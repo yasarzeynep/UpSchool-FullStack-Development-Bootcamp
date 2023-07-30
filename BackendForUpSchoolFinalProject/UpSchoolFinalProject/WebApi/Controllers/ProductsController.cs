@@ -5,18 +5,20 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace WebApi.Controllers
 {
-    [Route("api/[controller]")]
-    [ApiController]
+    //[Route("api/[controller]")]
+    //[ApiController]
     public class ProductsController : ApiControllerBase
     {
 
-        [HttpPost] //Added
+        [HttpPost("Add")] //Added
         public async Task<IActionResult> AddAsync(ProductAddCommand command)
         {
             return Ok(await Mediator.Send(command));
+            //var result = await Mediator.Send(command);
+            //return Ok(result);
         }
 
-        [HttpGet] //ıd, data 
+        [HttpGet("GetAll")] //ıd, data 
         public async Task<IActionResult> GetAllAsync(ProductGetAllQuery query)
         {
             return Ok(await Mediator.Send(query));

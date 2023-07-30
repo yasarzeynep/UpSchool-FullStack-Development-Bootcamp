@@ -34,7 +34,7 @@ namespace Application.Features.Products.Commands.Add
 
             await _applicationDbContext.Products.AddAsync(product, cancellationToken);
 
-            return new Response<int>("Product was successfully added.");
+            return new Response<int>("Congratulations!Product was successfully added.");
         }
     }
 }

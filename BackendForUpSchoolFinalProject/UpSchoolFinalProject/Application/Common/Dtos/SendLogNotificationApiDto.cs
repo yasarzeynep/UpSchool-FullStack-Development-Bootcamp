@@ -10,13 +10,15 @@ namespace Application.Common.Dtos
     {
         public SeleniumLogDto Log { get; set; }
         public string ConnectionId { get; set; }
+        public SeleniumLogDto ProductLog { get; set; }
 
-
-        public SendLogNotificationApiDto(SeleniumLogDto log, string connectionId)
+        public SendLogNotificationApiDto(SeleniumLogDto log, string connectionId, SeleniumLogDto productLog)
         {
             Log = log;
 
             ConnectionId = connectionId;
+            ProductLog = productLog;
+            ProductLog = productLog;
         }
     }
 }

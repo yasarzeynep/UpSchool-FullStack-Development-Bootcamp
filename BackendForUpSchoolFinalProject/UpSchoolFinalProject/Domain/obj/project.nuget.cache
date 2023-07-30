@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "1mf8BXY0J0oFX44BJMWr/atGSXH63fjkdhUS+qBtI1LdL621nAzolJYjvRpim7IVkdsJNYv3jufDUKHUKgYbOA==",
+  "dgSpecHash": "yPtq76ycnYxKG9q0LKhC8NMfJjgHLLIFiXtwQ4Ja21e27Wa47dZ6BLsT+/JPATcRgDomyNe8czH6QN3wgfNsjQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\zy_ya_000\\Desktop\\bugun\\finalprojeyedek\\UpSchoolFinalProject\\Domain\\Domain.csproj",
+  "projectFilePath": "C:\\Users\\HERO\\UPrepo\\UpSchool-FullStack-Development-Bootcamp\\BackendForUpSchoolFinalProject\\UpSchoolFinalProject\\Domain\\Domain.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\zy_ya_000\\.nuget\\packages\\mediatr\\12.0.1\\mediatr.12.0.1.nupkg.sha512",
-    "C:\\Users\\zy_ya_000\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
-    "C:\\Users\\zy_ya_000\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512"
+    "C:\\Users\\HERO\\.nuget\\packages\\mediatr\\12.0.1\\mediatr.12.0.1.nupkg.sha512",
+    "C:\\Users\\HERO\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
+    "C:\\Users\\HERO\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512"
   ],
   "logs": []
 }

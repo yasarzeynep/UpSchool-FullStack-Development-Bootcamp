@@ -535,7 +535,8 @@
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
           "Domain": "1.0.0",
-          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "7.0.5"
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "7.0.5",
+          "Microsoft.EntityFrameworkCore": "7.0.9"
         },
         "compile": {
           "bin/placeholder/Application.dll": {}
@@ -1400,19 +1401,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\zy_ya_000\\.nuget\\packages\\": {}
+    "C:\\Users\\HERO\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\zy_ya_000\\Desktop\\bugun\\finalprojeyedek\\UpSchoolFinalProject\\Infrastructure\\Infrastructure.csproj",
+      "projectUniqueName": "C:\\Users\\HERO\\UPrepo\\UpSchool-FullStack-Development-Bootcamp\\BackendForUpSchoolFinalProject\\UpSchoolFinalProject\\Infrastructure\\Infrastructure.csproj",
       "projectName": "Infrastructure",
-      "projectPath": "C:\\Users\\zy_ya_000\\Desktop\\bugun\\finalprojeyedek\\UpSchoolFinalProject\\Infrastructure\\Infrastructure.csproj",
-      "packagesPath": "C:\\Users\\zy_ya_000\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\zy_ya_000\\Desktop\\bugun\\finalprojeyedek\\UpSchoolFinalProject\\Infrastructure\\obj\\",
+      "projectPath": "C:\\Users\\HERO\\UPrepo\\UpSchool-FullStack-Development-Bootcamp\\BackendForUpSchoolFinalProject\\UpSchoolFinalProject\\Infrastructure\\Infrastructure.csproj",
+      "packagesPath": "C:\\Users\\HERO\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\HERO\\UPrepo\\UpSchool-FullStack-Development-Bootcamp\\BackendForUpSchoolFinalProject\\UpSchoolFinalProject\\Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\zy_ya_000\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\HERO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1426,8 +1432,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\zy_ya_000\\Desktop\\bugun\\finalprojeyedek\\UpSchoolFinalProject\\Application\\Application.csproj": {
-              "projectPath": "C:\\Users\\zy_ya_000\\Desktop\\bugun\\finalprojeyedek\\UpSchoolFinalProject\\Application\\Application.csproj"
+            "C:\\Users\\HERO\\UPrepo\\UpSchool-FullStack-Development-Bootcamp\\BackendForUpSchoolFinalProject\\UpSchoolFinalProject\\Application\\Application.csproj": {
+              "projectPath": "C:\\Users\\HERO\\UPrepo\\UpSchool-FullStack-Development-Bootcamp\\BackendForUpSchoolFinalProject\\UpSchoolFinalProject\\Application\\Application.csproj"
             }
           }
         }
@@ -1485,8 +1491,19 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1605",
+      "level": "Error",
+      "message": "Warning As Error: Detected package downgrade: Microsoft.EntityFrameworkCore from 7.0.9 to 7.0.5. Reference the package directly from the project to select a different version. \r\n Infrastructure -> Application -> Microsoft.EntityFrameworkCore (>= 7.0.9) \r\n Infrastructure -> Microsoft.EntityFrameworkCore (>= 7.0.5)",
+      "libraryId": "Microsoft.EntityFrameworkCore",
+      "targetGraphs": [
+        "net7.0"
+      ]
+    }
+  ]
 }
