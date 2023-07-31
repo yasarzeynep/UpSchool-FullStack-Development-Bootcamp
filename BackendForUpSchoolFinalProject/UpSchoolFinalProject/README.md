@@ -14,5 +14,13 @@ In this final project, you must build a data crawler for a small e-commerce webs
 - SignalR
 - Blazor
 
+ ###  Project Structure
+ - Application
+ - Crawler (Console)
+ - Domain
+ - Infrastructure
+ -  Wasm
+ -  WebApi
+
 ### 👨‍💻 Project Status
 The project continues. Stay tuned 😎
