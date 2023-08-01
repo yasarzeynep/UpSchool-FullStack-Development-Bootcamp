@@ -17,9 +17,9 @@ namespace Infrastructure
         public static IServiceCollection AddInfrastructure(this IServiceCollection services,
             IConfiguration configuration, string wwwrootPath)
         {
-            var connectionString = configuration.GetConnectionString("MariaDB");
+            //var connectionString = configuration.GetConnectionString("MariaDB");
 
-            services.AddDbContext<ApplicationDbContext>(opt => opt.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
+            //services.AddDbContext<ApplicationDbContext>(opt => opt.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
 
             // Scoped Services : Bir request geldiğinde ihtiyac duydukça aynı referansı kullanmak
             services.AddScoped<IApplicationDbContext>(provider => provider.GetRequiredService<ApplicationDbContext>());

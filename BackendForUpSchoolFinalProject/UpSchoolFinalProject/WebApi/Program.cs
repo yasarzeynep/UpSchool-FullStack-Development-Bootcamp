@@ -1,5 +1,6 @@
 using Application;
 using Infrastructure;
+using Infrastructure.Persistence.Contexts;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
@@ -16,8 +17,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddSignalR();
 
-//var mariaDbConnectionString = builder.Configuration.GetConnectionString("MariaDB")!;
-//builder.Services.AddDbContext<UpStorageDbContext>(opt => opt.UseMySql(mariaDbConnectionString, ServerVersion.AutoDetect(mariaDbConnectionString)));
+var mariaDbConnectionString = builder.Configuration.GetConnectionString("MariaDB")!;
+builder.Services.AddDbContext<ApplicationDbContext>(opt => opt.UseMySql(mariaDbConnectionString, ServerVersion.AutoDetect(mariaDbConnectionString)));
 
 builder.Services.Configure<ApiBehaviorOptions>(options =>
 {
@@ -58,7 +59,7 @@ app.UseStaticFiles();
 
 app.UseHttpsRedirection();
 
-//app.UseRouting();
+app.UseRouting();
 
 
 app.UseAuthorization();

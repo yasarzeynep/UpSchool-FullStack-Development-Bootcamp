@@ -23,17 +23,20 @@ namespace Application.Features.Products.Commands.Add
             var product = new Product()
             {
                 Name = request.Name,
-                OrderId = Guid.Parse(request.OrderId),
+                OrderId = request.OrderId,
                 Price = request.Price,
                 Picture = request.Picture,
                 IsOnSale = request.IsOnSale,
                 SalePrice = request.SalePrice,
-                // CreatedOn = DateTimeOffset.Now,
+                CreatedOn = DateTimeOffset.Now,
                 IsDeleted = false
             };
 
-            await _applicationDbContext.Products.AddAsync(product, cancellationToken);
 
+
+            await _applicationDbContext.Products.AddAsync(product, cancellationToken);
+            
+            await _applicationDbContext.SaveChangesAsync(cancellationToken); // son guncellemeyi yapmak için 
             return new Response<int>("Congratulations!Product was successfully added.");
         }
     }

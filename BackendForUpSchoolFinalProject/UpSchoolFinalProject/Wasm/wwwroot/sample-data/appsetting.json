@@ -1,5 +1,0 @@
-{
-  "ApiUrl": "https://localhost:7008/api/",
-  "SignalRUrl": "https://localhost:7008/Hubs",
-  "ApiKey": "123456"
-}

@@ -36,7 +36,7 @@ else
                 <tr>
                 <td>@productLog.Message</td>
                 <td>@productLog.SentOn</td>
-                <td>@productLog.Id</td>
+               @* <td>@productLog.Id</td>*@
                 
                   
                 </tr>
@@ -60,9 +60,7 @@ else
             .WithAutomaticReconnect()
             .Build();
 
-       
-
-        // Product
+      
 
         hubConnection.On<SeleniumLogDto>("NewProductLogAdded", (seleniumLogDto) =>
         {

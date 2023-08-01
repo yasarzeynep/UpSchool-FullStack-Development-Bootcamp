@@ -2,6 +2,7 @@
 {
     public class ProductGetAllDto
     {
+        public Guid Id { get; set; }
         public string OrderId { get; set; }
         public string Name { get; set; }
         public decimal Price { get; set; }

@@ -36,7 +36,7 @@ namespace Crawler
         public static class Answers
         {
  
-            public static readonly string Type = "What products do you want to scrape";
+            public static readonly string Type = "";
 
         }
         public static class Errors

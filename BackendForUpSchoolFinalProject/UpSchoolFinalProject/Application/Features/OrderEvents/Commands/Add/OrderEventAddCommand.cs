@@ -13,7 +13,7 @@ namespace Application.Features.OrderEvents.Commands.Add
     {
         public Guid OrderId { get; set; }
         public OrderStatus Status { get; set; }
-        public DateTimeOffset CreatedOn { get; set; }
+        // public DateTimeOffset CreatedOn { get; set; }
     }
 }
 

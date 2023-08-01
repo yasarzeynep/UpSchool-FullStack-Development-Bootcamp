@@ -21,23 +21,23 @@ namespace Infrastructure.Persistence.Configurations.Application
             // Other column configurations
             // enum //C# enum;  Db enum tipini tanımadığı için, veritabanına int yaz, okurken int->enum çevir
             builder.Property(oe => oe.Status).IsRequired();
-            builder.Property(oe => oe.Status).HasConversion<int>(); 
+            builder.Property(oe => oe.Status).HasConversion<int>();
 
             // Common Fields
 
-    
+            builder.Property(x => x.CreatedOn).IsRequired();
 
-            // DeletedOn
-            builder.Property(x => x.DeletedOn).IsRequired(false);
+            //DeletedOn
+            //builder.Property(x => x.DeletedOn).IsRequired(false);
 
-            // DeletedByUserId
-            builder.Property(x => x.DeletedByUserId).IsRequired(false);
-            builder.Property(x => x.DeletedByUserId).HasMaxLength(100);
+            //DeletedByUserId
+            //builder.Property(x => x.DeletedByUserId).IsRequired(false);
+            //builder.Property(x => x.DeletedByUserId).HasMaxLength(100);
 
-            // IsDeleted
-            builder.Property(x => x.IsDeleted).IsRequired();
-            builder.Property(x => x.IsDeleted).HasDefaultValueSql("0");
-            builder.HasIndex(x => x.IsDeleted);
+            //IsDeleted
+            //builder.Property(x => x.IsDeleted).IsRequired();
+            //builder.Property(x => x.IsDeleted).HasDefaultValueSql("0");
+            //builder.HasIndex(x => x.IsDeleted);
 
             // Relationships
             builder.HasOne(oe => oe.Order)
