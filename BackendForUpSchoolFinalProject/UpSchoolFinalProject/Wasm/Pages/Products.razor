@@ -1,0 +1,50 @@
+﻿@page "/products"
+@using Application.Common.Dtos
+@using Application.Features.Products.Queries.GetAll
+@using Domain.Services
+@using Microsoft.AspNetCore.SignalR.Client
+@using Wasm.Services
+@inject HttpClient HttpClient
+@inject IUrlHelperService UrlHelperService
+
+<h3>Products Table</h3>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Message</th>
+            <th>Sent On</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var productLog in productsLog)
+        {
+            <tr>
+                <td>@productLog.Message</td>
+                <td>@productLog.SentOn.ToString("g")</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@code {
+    private List<SeleniumLogDto> productsLog = new List<SeleniumLogDto>();
+    private HubConnection? hubConnection;
+
+    protected override async Task OnInitializedAsync()
+    {
+        hubConnection = new HubConnectionBuilder()
+            .WithUrl($"{UrlHelperService.SignalRUrl}/SeleniumLogHub")
+            .WithAutomaticReconnect()
+            .Build();
+
+        hubConnection.On<SeleniumLogDto>("NewProductLogAdded", (seleniumLogDto) =>
+        {
+            productsLog.Add(seleniumLogDto);
+            InvokeAsync(StateHasChanged);
+        });
+
+        await hubConnection.StartAsync();
+        await base.OnInitializedAsync();
+    }
+}

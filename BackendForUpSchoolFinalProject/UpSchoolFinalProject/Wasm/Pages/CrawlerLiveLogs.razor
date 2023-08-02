@@ -5,20 +5,30 @@
 @inject IUrlHelperService UrlHelperService
 
 <div class=fakeMenu>
-    <div class="fakeButtons fakeClose"></div>
-    <div class="fakeButtons fakeMinimize"></div>
-    <div class="fakeButtons fakeZoom"></div>
+    <!-- Sahte menü öğeleri -->
 </div>
 <div class="fakeScreen">
-    @foreach (var log in logs)
-    {
-        <p class="line1">@log.Message | @log.SentOn.ToString("g")</p>
-    }
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Log Mesajı</th>
+                <th>Gönderilme Tarihi</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var log in logs)
+            {
+                <tr>
+                    <td>@log.Message</td>
+                    <td>@log.SentOn.ToString("g")</td>
+                </tr>
+            }
+        </tbody>
+    </table>
 </div>
 
 @code {
     private List<SeleniumLogDto> logs = new List<SeleniumLogDto>();
-    private List<SeleniumLogDto> productsLog = new List<SeleniumLogDto>();
 
     private HubConnection? hubConnection;
 
