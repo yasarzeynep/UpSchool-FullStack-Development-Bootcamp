@@ -11,7 +11,6 @@
 using System;
 using System.Reflection;
 
-[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("dotnet-CrawlerService-9d144df1-1cb1-4fc9-bedd-b6f901a7f278")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("CrawlerWorkerService")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
