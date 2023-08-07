@@ -1,0 +1,111 @@
+﻿@page "/settings"
+@using ClosedXML.Excel
+@using System.Net
+@using System.Net.Mail
+@using System.IO
+
+<h3 class="page-title">
+    Settings
+</h3>
+
+<div class="content">
+    <table class="settings-table">
+        <tr>
+            <td>
+                <div class="section">
+                    <h4>Email Configuration</h4>
+
+                    <table>
+                        <tr>
+                            <td><label for="inputEmail">Email Address:</label></td>
+                            <td><input type="email" class="form-control" id="inputEmail" placeholder="Enter email address"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="inputPassword">Password:</label></td>
+                            <td><input type="password" class="form-control" id="inputPassword" placeholder="Enter password"></td>
+                        </tr>
+                    </table>
+
+                    <button class="btn btn-primary send-email-button" @onclick="SendEmail">Send Email</button>
+                </div>
+            </td>
+            <td>
+                <div class="section">
+                    <h4>Excel Export</h4>
+
+                    <p>Click the button below to export data to Excel.</p>
+
+                    <button class="btn btn-primary export-excel-button" @onclick="ExportToExcel">Export to Excel</button>
+                </div>
+            </td>
+            <td>
+                <div class="section">
+                    <h4>Notification Settings</h4>
+
+                    <label for="notificationCheckbox">
+                        <input type="checkbox" id="notificationCheckbox" @bind="showNotification"> Show Notifications
+                    </label>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<style>
+    .page-title {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .content {
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .settings-table {
+        width: 100%;
+        max-width: 900px;
+        border-collapse: collapse;
+        background-color: #f2f2f2;
+    }
+
+    .section {
+        padding: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        background-color: #f2f2f2;
+        margin-bottom: 1rem;
+    }
+
+    .btn {
+        margin-top: 0.5rem;
+        color: #fff;
+    }
+
+    .send-email-button {
+        background-color: #28a745;
+        border-color: #28a745;
+    }
+
+    .export-excel-button {
+        background-color: #28a745;
+        border-color: #28a745;
+    }
+</style>
+
+@code {
+    private bool showNotification = true;
+
+    private async Task SendEmail()
+    {
+        // Email sending operations
+        // Add email sending code here
+    }
+
+    private async Task ExportToExcel()
+    {
+        // Excel conversion and download operations
+        // Add Excel operations and download code here
+    }
+}
