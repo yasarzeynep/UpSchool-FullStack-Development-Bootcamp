@@ -1,5 +1,0 @@
-C:\Users\HERO\Desktop\CapstoneProject\CapstoneProject-Backend\src\Crawler\obj\Debug\net7.0\Crawler.csproj.AssemblyReference.cache
-C:\Users\HERO\Desktop\CapstoneProject\CapstoneProject-Backend\src\Crawler\obj\Debug\net7.0\Crawler.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\HERO\Desktop\CapstoneProject\CapstoneProject-Backend\src\Crawler\obj\Debug\net7.0\Crawler.AssemblyInfoInputs.cache
-C:\Users\HERO\Desktop\CapstoneProject\CapstoneProject-Backend\src\Crawler\obj\Debug\net7.0\Crawler.AssemblyInfo.cs
-C:\Users\HERO\Desktop\CapstoneProject\CapstoneProject-Backend\src\Crawler\obj\Debug\net7.0\Crawler.csproj.CoreCompileInputs.cache

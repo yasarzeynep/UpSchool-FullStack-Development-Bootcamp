@@ -1,6 +1,0 @@
-C:\Users\HERO\Desktop\CapstoneProject\CapstoneProject-Backend\src\WebApi\obj\Debug\net7.0\WebApi.csproj.AssemblyReference.cache
-C:\Users\HERO\Desktop\CapstoneProject\CapstoneProject-Backend\src\WebApi\obj\Debug\net7.0\WebApi.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\HERO\Desktop\CapstoneProject\CapstoneProject-Backend\src\WebApi\obj\Debug\net7.0\WebApi.AssemblyInfoInputs.cache
-C:\Users\HERO\Desktop\CapstoneProject\CapstoneProject-Backend\src\WebApi\obj\Debug\net7.0\WebApi.AssemblyInfo.cs
-C:\Users\HERO\Desktop\CapstoneProject\CapstoneProject-Backend\src\WebApi\obj\Debug\net7.0\WebApi.csproj.CoreCompileInputs.cache
-C:\Users\HERO\Desktop\CapstoneProject\CapstoneProject-Backend\src\WebApi\obj\Debug\net7.0\WebApi.MvcApplicationPartsAssemblyInfo.cache

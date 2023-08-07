@@ -1,5 +1,0 @@
-C:\Users\HERO\Desktop\CapstoneProject\CapstoneProject-Backend\src\Domain\obj\Debug\net7.0\Domain.csproj.AssemblyReference.cache
-C:\Users\HERO\Desktop\CapstoneProject\CapstoneProject-Backend\src\Domain\obj\Debug\net7.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\HERO\Desktop\CapstoneProject\CapstoneProject-Backend\src\Domain\obj\Debug\net7.0\Domain.AssemblyInfoInputs.cache
-C:\Users\HERO\Desktop\CapstoneProject\CapstoneProject-Backend\src\Domain\obj\Debug\net7.0\Domain.AssemblyInfo.cs
-C:\Users\HERO\Desktop\CapstoneProject\CapstoneProject-Backend\src\Domain\obj\Debug\net7.0\Domain.csproj.CoreCompileInputs.cache
