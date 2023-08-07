@@ -5515,11 +5515,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HERO\\Desktop\\CapstoneProject\\CapstoneProject-Backend\\tests\\Application.UnitTests\\Application.UnitTests.csproj",
+      "projectUniqueName": "C:\\Users\\HERO\\UPrepo\\UpSchool-FullStack-Development-Bootcamp\\CapstoneProject\\CapstoneProject-Backend\\tests\\Application.UnitTests\\Application.UnitTests.csproj",
       "projectName": "Application.UnitTests",
-      "projectPath": "C:\\Users\\HERO\\Desktop\\CapstoneProject\\CapstoneProject-Backend\\tests\\Application.UnitTests\\Application.UnitTests.csproj",
+      "projectPath": "C:\\Users\\HERO\\UPrepo\\UpSchool-FullStack-Development-Bootcamp\\CapstoneProject\\CapstoneProject-Backend\\tests\\Application.UnitTests\\Application.UnitTests.csproj",
       "packagesPath": "C:\\Users\\HERO\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HERO\\Desktop\\CapstoneProject\\CapstoneProject-Backend\\tests\\Application.UnitTests\\obj\\",
+      "outputPath": "C:\\Users\\HERO\\UPrepo\\UpSchool-FullStack-Development-Bootcamp\\CapstoneProject\\CapstoneProject-Backend\\tests\\Application.UnitTests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

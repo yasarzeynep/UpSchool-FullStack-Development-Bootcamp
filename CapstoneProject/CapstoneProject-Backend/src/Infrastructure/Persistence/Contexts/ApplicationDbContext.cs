@@ -29,16 +29,14 @@ namespace Infrastructure.Persistence.Contexts
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             // Configurations; ApplicationDbContext teki tüm konfgürasyonları okuyacak
-            //modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
+            modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
 
-            modelBuilder.ApplyConfiguration(new ProductConfiguration());
-            modelBuilder.ApplyConfiguration(new OrderConfiguration());
-            modelBuilder.ApplyConfiguration(new OrderEventConfiguration());
+            //modelBuilder.ApplyConfiguration(new ProductConfiguration());
+            //modelBuilder.ApplyConfiguration(new OrderConfiguration());
+            //modelBuilder.ApplyConfiguration(new OrderEventConfiguration());
 
 
-            // Seeds
-            modelBuilder.ApplyConfiguration(new ProductSeeder());
-            modelBuilder.ApplyConfiguration(new OrderSeeder());
+     
 
             // Ignores 
 

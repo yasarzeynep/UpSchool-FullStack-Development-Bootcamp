@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HERO\\Desktop\\CapstoneProject\\CapstoneProject-Backend\\src\\Infrastructure\\Infrastructure.csproj": {}
+    "C:\\Users\\HERO\\UPrepo\\UpSchool-FullStack-Development-Bootcamp\\CapstoneProject\\CapstoneProject-Backend\\src\\Infrastructure\\Infrastructure.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HERO\\Desktop\\CapstoneProject\\CapstoneProject-Backend\\src\\Application\\Application.csproj": {
+    "C:\\Users\\HERO\\UPrepo\\UpSchool-FullStack-Development-Bootcamp\\CapstoneProject\\CapstoneProject-Backend\\src\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HERO\\Desktop\\CapstoneProject\\CapstoneProject-Backend\\src\\Application\\Application.csproj",
+        "projectUniqueName": "C:\\Users\\HERO\\UPrepo\\UpSchool-FullStack-Development-Bootcamp\\CapstoneProject\\CapstoneProject-Backend\\src\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "C:\\Users\\HERO\\Desktop\\CapstoneProject\\CapstoneProject-Backend\\src\\Application\\Application.csproj",
+        "projectPath": "C:\\Users\\HERO\\UPrepo\\UpSchool-FullStack-Development-Bootcamp\\CapstoneProject\\CapstoneProject-Backend\\src\\Application\\Application.csproj",
         "packagesPath": "C:\\Users\\HERO\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HERO\\Desktop\\CapstoneProject\\CapstoneProject-Backend\\src\\Application\\obj\\",
+        "outputPath": "C:\\Users\\HERO\\UPrepo\\UpSchool-FullStack-Development-Bootcamp\\CapstoneProject\\CapstoneProject-Backend\\src\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +32,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\HERO\\Desktop\\CapstoneProject\\CapstoneProject-Backend\\src\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\HERO\\Desktop\\CapstoneProject\\CapstoneProject-Backend\\src\\Domain\\Domain.csproj"
+              "C:\\Users\\HERO\\UPrepo\\UpSchool-FullStack-Development-Bootcamp\\CapstoneProject\\CapstoneProject-Backend\\src\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\HERO\\UPrepo\\UpSchool-FullStack-Development-Bootcamp\\CapstoneProject\\CapstoneProject-Backend\\src\\Domain\\Domain.csproj"
               }
             }
           }
@@ -85,14 +85,14 @@
         }
       }
     },
-    "C:\\Users\\HERO\\Desktop\\CapstoneProject\\CapstoneProject-Backend\\src\\Domain\\Domain.csproj": {
+    "C:\\Users\\HERO\\UPrepo\\UpSchool-FullStack-Development-Bootcamp\\CapstoneProject\\CapstoneProject-Backend\\src\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HERO\\Desktop\\CapstoneProject\\CapstoneProject-Backend\\src\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\HERO\\UPrepo\\UpSchool-FullStack-Development-Bootcamp\\CapstoneProject\\CapstoneProject-Backend\\src\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\HERO\\Desktop\\CapstoneProject\\CapstoneProject-Backend\\src\\Domain\\Domain.csproj",
+        "projectPath": "C:\\Users\\HERO\\UPrepo\\UpSchool-FullStack-Development-Bootcamp\\CapstoneProject\\CapstoneProject-Backend\\src\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\HERO\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HERO\\Desktop\\CapstoneProject\\CapstoneProject-Backend\\src\\Domain\\obj\\",
+        "outputPath": "C:\\Users\\HERO\\UPrepo\\UpSchool-FullStack-Development-Bootcamp\\CapstoneProject\\CapstoneProject-Backend\\src\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -158,14 +158,14 @@
         }
       }
     },
-    "C:\\Users\\HERO\\Desktop\\CapstoneProject\\CapstoneProject-Backend\\src\\Infrastructure\\Infrastructure.csproj": {
+    "C:\\Users\\HERO\\UPrepo\\UpSchool-FullStack-Development-Bootcamp\\CapstoneProject\\CapstoneProject-Backend\\src\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HERO\\Desktop\\CapstoneProject\\CapstoneProject-Backend\\src\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\HERO\\UPrepo\\UpSchool-FullStack-Development-Bootcamp\\CapstoneProject\\CapstoneProject-Backend\\src\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "C:\\Users\\HERO\\Desktop\\CapstoneProject\\CapstoneProject-Backend\\src\\Infrastructure\\Infrastructure.csproj",
+        "projectPath": "C:\\Users\\HERO\\UPrepo\\UpSchool-FullStack-Development-Bootcamp\\CapstoneProject\\CapstoneProject-Backend\\src\\Infrastructure\\Infrastructure.csproj",
         "packagesPath": "C:\\Users\\HERO\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HERO\\Desktop\\CapstoneProject\\CapstoneProject-Backend\\src\\Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\HERO\\UPrepo\\UpSchool-FullStack-Development-Bootcamp\\CapstoneProject\\CapstoneProject-Backend\\src\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -186,8 +186,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\HERO\\Desktop\\CapstoneProject\\CapstoneProject-Backend\\src\\Application\\Application.csproj": {
-                "projectPath": "C:\\Users\\HERO\\Desktop\\CapstoneProject\\CapstoneProject-Backend\\src\\Application\\Application.csproj"
+              "C:\\Users\\HERO\\UPrepo\\UpSchool-FullStack-Development-Bootcamp\\CapstoneProject\\CapstoneProject-Backend\\src\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\HERO\\UPrepo\\UpSchool-FullStack-Development-Bootcamp\\CapstoneProject\\CapstoneProject-Backend\\src\\Application\\Application.csproj"
               }
             }
           }

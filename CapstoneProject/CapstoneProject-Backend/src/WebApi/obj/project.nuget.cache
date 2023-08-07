@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "c19+wC/iLkNaFzoloakhvHwUq20GoWBQi42LrxtofjU49Sy7XOW0wJiv0/XOMYSCfj329PzWZ3GjLG03yIxQTg==",
+  "dgSpecHash": "JBqDAzi3H+TOS13V9GSQJPCPw7K6LSWgLufUwztUZx7PkbfjCMMfoGpjRtuKryDNz8xOv1NVyuxYXwcuUsDj3g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\HERO\\Desktop\\CapstoneProject\\CapstoneProject-Backend\\src\\WebApi\\WebApi.csproj",
+  "projectFilePath": "C:\\Users\\HERO\\UPrepo\\UpSchool-FullStack-Development-Bootcamp\\CapstoneProject\\CapstoneProject-Backend\\src\\WebApi\\WebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HERO\\.nuget\\packages\\acr.userdialogs\\8.0.1\\acr.userdialogs.8.0.1.nupkg.sha512",
     "C:\\Users\\HERO\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
