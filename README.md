@@ -8,5 +8,6 @@ This repo contains assignments done throughout the UP School Full Stack Develope
 ### Project 4: Unit Testing
 ### Project 5: React & TypeScript Todo Application
 ### Project Final: Backend for Final Project
+### Capstone Project
 
 [UP School](https://www.upschool.io/)
