@@ -1,7 +1,7 @@
 # Capstone Project
 ## 📃Full-Stack E-Commerce Data Crawler & Web Application 
 This project involves a data scraping application that fetches competitor product prices by scraping an e-commerce website and a web application that presents the scraped data to users.
-
+## 🌟About the Project
 ### 🧰Technologies
 #### Backend Technologies
 - CQRS (Command Query Responsibility Segregation) architecture
@@ -22,6 +22,8 @@ This project involves a data scraping application that fetches competitor produc
 - Excel Export Library 
 - Axios
 - Nodemailer
+### 🔗Project Diagram
+![3](https://github.com/yasarzeynep/UpSchool-FullStack-Development-Bootcamp/assets/116646963/dd5c5435-c364-4627-9e5c-7eba0a3b071c)
   
 ### 👨‍💻 Project Status
 The project continues. Stay tuned 😎
