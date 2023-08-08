@@ -14,6 +14,12 @@ namespace Crawler
             Console.WriteLine("Welcome to the Crawler Page");
             Console.WriteLine("************************************************");
         }
+        public static void FirstMessage()
+        {
+            Console.WriteLine("************************************************");
+            Console.WriteLine("Website logged in");
+
+        }
         public static void PrintLoginMessage()
         {
             Console.WriteLine("************************************************");
@@ -22,15 +28,35 @@ namespace Crawler
         }
         public static void ScrapingQuestion()
         {
+
             Console.WriteLine("------------------------------------------------");
-            Console.WriteLine("What products do you want to scrape?");
+            Console.WriteLine("What type of products do you want to crawler?");
             Console.WriteLine("You can choose one option from three options");
-            Console.WriteLine("1= All Products, 2= On Sale Products, 3= Regular Price Products");
-            Console.WriteLine("------------------------------------------------");
+            Console.WriteLine("Please enter: A,B or C options.");
+            Console.WriteLine("A= All Products, B= On Sale Products, C= Regular Price Products")
             //public static readonly string ScrapeRequest = "How many products do you want to scrape";
             //public static readonly string ProductType = "What products do you want to scrape";
 
 
+        }
+        public static void EmailMessage()
+        {
+            Console.WriteLine("------------------------------------------------");
+            Console.WriteLine("Do you want to receive the crawled products by email?");
+            Console.WriteLine("Please enter 'Y' for Yes or 'N' for No:");
+
+        }
+        public static void EmailAdressMessage()
+        { 
+        Console.WriteLine("Please enter your email address to receive the results:")
+           }
+
+        public static void ScrapingContinue()
+        {
+
+            Console.WriteLine("------------------------------------------------");
+            Console.WriteLine("Do you want to continue product crawler? ");
+            Console.WriteLine("Please enter 'Y' for Yes or 'N' for No:");
         }
 
         public static class Answers

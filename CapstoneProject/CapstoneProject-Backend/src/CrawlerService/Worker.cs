@@ -14,6 +14,8 @@ using System.Globalization;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Net.Http.Json;
+using Newtonsoft.Json;
+using System.Text;
 
 namespace CrawlerWorkerService
 {
@@ -21,67 +23,115 @@ namespace CrawlerWorkerService
     {
         #region Constant
         private readonly ILogger<Worker> _logger;
-        private readonly string _seleniumLog = "https://localhost:7245/Hubs/SeleniumLogHub";
-        private readonly string _orderHub = "https://localhost:7245/Hubs/OrderHub";
-        private HubConnection seleniumLogHubConnection;
-        private HubConnection orderHubConnection;
+        private readonly string _seleniumLogUrl = "https://localhost:7245/Hubs/SeleniumLogHub";
+        private readonly string _orderHubUrl = "https://localhost:7245/Hubs/OrderHub";
+        private readonly HttpClient _httpClient;
+        private readonly HubConnection _seleniumLogHubConnection;
+        private readonly HubConnection _orderHubConnection;
         public string RequestedAmountUser { get; set; }
         public string ProductCrawlTypeUser { get; set; }
-        private bool crawlerData;
+        private bool _crawlerData;
         #endregion
         public Worker(ILogger<Worker> logger)
         {
-            seleniumLogHubConnection = new HubConnectionBuilder()
-                .WithUrl(_seleniumLog)
-                .WithAutomaticReconnect()
-                .Build();
-
-            orderHubConnection = new HubConnectionBuilder()
-                .WithUrl(_orderHub)
-                .WithAutomaticReconnect()
-                .Build();
-
             _logger = logger;
-            crawlerData = false;
-        }
+            _httpClient = new HttpClient();
+            _seleniumLogHubConnection = InitializeHubConnection(_seleniumLogUrl);
+            _orderHubConnection = InitializeHubConnection(_orderHubUrl);
+            _crawlerData = false;
+            //  _logger = logger;
+            //_httpClient = new HttpClient();
+            //seleniumLogHubConnection = new HubConnectionBuilder()
+            //    .WithUrl(_seleniumLog)
+            //    .WithAutomaticReconnect()
+            //    .Build();
 
+            //orderHubConnection = new HubConnectionBuilder()
+            //    .WithUrl(_orderHub)
+            //    .WithAutomaticReconnect()
+            //    .Build();
+
+        }
+        private HubConnection InitializeHubConnection(string hubUrl)
+        {
+            return new HubConnectionBuilder()
+                .WithUrl(hubUrl)
+                .WithAutomaticReconnect()
+                .Build();
+        }
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
         {
             try
             {
-
-
                 await Task.WhenAll(
-                seleniumLogHubConnection.StartAsync(stoppingToken),
-                orderHubConnection.StartAsync(stoppingToken)
-            );
+                    _seleniumLogHubConnection.StartAsync(stoppingToken),
+                    _orderHubConnection.StartAsync(stoppingToken)
+                );
 
-                if (seleniumLogHubConnection.State == HubConnectionState.Connected && orderHubConnection.State == HubConnectionState.Connected)
+                if (BothHubsAreConnected())
                 {
-                    seleniumLogHubConnection.On<string>("SendLogNotificationAsync", async (log) => { await Crawler(); });
-
-                    orderHubConnection.On<string, string>("UserReceived", async (requestedAmount, productCrawlType) =>
-                    {
-                        RequestedAmountUser = requestedAmount;
-                        ProductCrawlTypeUser = productCrawlType;
-
-
-
+                    SubscribeToLogNotifications();
+                    SubscribeToUserReceivedEvents();
+                }
+            }
             catch (Exception e)
             {
-                Console.WriteLine("Hata: " + e.Message);
+                _logger.LogError("Hata: " + e.Message);
             }
+        }
+        private bool BothHubsAreConnected()
+        {
+            return _seleniumLogHubConnection.State == HubConnectionState.Connected &&
+                   _orderHubConnection.State == HubConnectionState.Connected;
+        }
+        private void SubscribeToLogNotifications()
+        {
+            _seleniumLogHubConnection.On<string>("SendLogNotificationAsync", async (log) => { await Crawler(); });
+        }
+
+        private void SubscribeToUserReceivedEvents()
+        {
+            _orderHubConnection.On<string, string>("UserReceived", (requestedAmount, productCrawlType) =>
+            {
+                _requestedAmountUser = requestedAmount;
+                _productCrawlTypeUser = productCrawlType;
+            });
         }
 
 
+        #region Function to send an HTTP POST request and deserialize the response
+        async Task<TResponse> SendHttpPostRequest<TRequest, TResponse>(HttpClient httpClient, string url, TRequest payload)
+        {
+            var jsonPayload = JsonConvert.SerializeObject(payload);
+            var httpContent = new StringContent(jsonPayload, Encoding.UTF8, "application/json");
+            var response = await httpClient.PostAsync(url, httpContent);
+            response.EnsureSuccessStatusCode();
+            var jsonResponse = await response.Content.ReadAsStringAsync();
+            var responseObject = JsonConvert.DeserializeObject<TResponse>(jsonResponse);
+            return responseObject;
+        }
+        #endregion
+        public override async Task StopAsync(CancellationToken cancellationToken)
+        {
+            await _seleniumLogHubConnection.StopAsync(cancellationToken);
+            await _orderHubConnection.StopAsync(cancellationToken);
+            _seleniumLogHubConnection.Dispose();
+            _orderHubConnection.DisposeAsync();
+            _httpClient.Dispose();
+
+            await base.StopAsync(cancellationToken);
+        }
+
         public async Task Crawler()
         {
-            crawlerData = true;
+            _crawlerData = true;
 
             var requestedAmount = RequestedAmountUser;
             var productCrawlType = ProductCrawlTypeUser;
 
-
+           // await LogNotification("Welcome to the Crawler Log Page");
+           
+            var orderAddResponse = await SendHttpPostRequest<OrderAddCommand, object>(ordersUrl, orderAddRequest);
             await seleniumLogHubConnection.InvokeAsync("SendLogNotificationAsync", CreateLog("Welcome to the Crawler Log Page", Guid.Empty));
             await seleniumLogHubConnection.InvokeAsync("SendLogNotificationAsync", CreateLog("Website logged in", Guid.Empty));
             await seleniumLogHubConnection.InvokeAsync("SendLogNotificationAsync", CreateLog("Preferences have been received.", Guid.Empty));
@@ -130,9 +180,9 @@ namespace CrawlerWorkerService
                         validAnswer = true;
                         break;
                     default:
-                        Console.WriteLine("ERROR: You entered an invalid option!");
+                       
                         Thread.Sleep(1500);
-                        Console.Clear();
+                     
                         break;
                 }
             }
@@ -201,12 +251,6 @@ namespace CrawlerWorkerService
                 foreach (IWebElement productElement in productElements)
                 {
                     bool includeProduct = false;
-
-                    if (productCrawlType == "A" || productCrawlType == "B" || productCrawlType == "C")
-                    {
-                        includeProduct = true;
-                    }
-
                     if (includeProduct)
                     {
                         if (requestedAmount.ToLower() == "all" || itemCount < int.Parse(requestedAmount))
@@ -325,24 +369,21 @@ namespace CrawlerWorkerService
             orderEventAddResponse = await SendHttpPostRequest<OrderEventAddCommand, object>(httpClient, ordersEventsUrl, orderEventAddRequest);
 
             await seleniumLogHubConnection.InvokeAsync("SendLogNotificationAsync", CreateLog(OrderStatus.OrderCompleted.ToString(), Guid.Empty));
+            await seleniumLogHubConnection.InvokeAsync("SendLogNotificationAsync", CreateLog("Data scraping completed. Bot Stopped!", Guid.Empty));
+            await seleniumLogHubConnection.InvokeAsync("SendLogNotificationAsync", CreateLog("Mission is completed!", Guid.Empty));
+            await seleniumLogHubConnection.InvokeAsync("SendLogNotificationAsync", CreateLog("Bot Will Restart. Website logged in!", Guid.Empty));
+            Driver.Dispose();
 
+            _httpClient.Dispose();
+            _crawlerData = false;
 
-            #region Continue Product Scraping
-            string answerContinueOption = Console.ReadLine().ToUpper();
-            bool answerContinue = answerContinueOption == "N";
-            if (answerContinue)
-            {
-                valid = true;
-                httpClient.Dispose();
+           
 
-                await seleniumLogHubConnection.InvokeAsync("SendLogNotificationAsync", CreateLog("Data scraping completed. Bot Stopped!", Guid.Empty));
-                await seleniumLogHubConnection.InvokeAsync("SendLogNotificationAsync", CreateLog("Mission is completed!", Guid.Empty));
-            }
-            else
-            {
-                await seleniumLogHubConnection.InvokeAsync("SendLogNotificationAsync", CreateLog("Bot Will Restart. Website logged in!", Guid.Empty));
+              
 
-                #endregion
-            }
+            
         }
+
     }
+
+}

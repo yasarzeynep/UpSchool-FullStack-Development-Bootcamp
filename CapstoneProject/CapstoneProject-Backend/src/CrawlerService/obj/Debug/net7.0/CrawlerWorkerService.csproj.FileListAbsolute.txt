@@ -111,3 +111,11 @@ C:\Users\HERO\Desktop\CapstoneProject\CapstoneProject-Backend\src\CrawlerService
 C:\Users\HERO\Desktop\CapstoneProject\CapstoneProject-Backend\src\CrawlerService\obj\Debug\net7.0\CrawlerWorkerService.pdb
 C:\Users\HERO\Desktop\CapstoneProject\CapstoneProject-Backend\src\CrawlerService\obj\Debug\net7.0\CrawlerWorkerService.genruntimeconfig.cache
 C:\Users\HERO\Desktop\CapstoneProject\CapstoneProject-Backend\src\CrawlerService\obj\Debug\net7.0\ref\CrawlerWorkerService.dll
+C:\Users\HERO\UPrepo\UpSchool-FullStack-Development-Bootcamp\CapstoneProject\CapstoneProject-Backend\src\CrawlerService\obj\Debug\net7.0\CrawlerWorkerService.csproj.AssemblyReference.cache
+C:\Users\HERO\UPrepo\UpSchool-FullStack-Development-Bootcamp\CapstoneProject\CapstoneProject-Backend\src\CrawlerService\obj\Debug\net7.0\CrawlerWorkerService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HERO\UPrepo\UpSchool-FullStack-Development-Bootcamp\CapstoneProject\CapstoneProject-Backend\src\CrawlerService\obj\Debug\net7.0\CrawlerWorkerService.AssemblyInfoInputs.cache
+C:\Users\HERO\UPrepo\UpSchool-FullStack-Development-Bootcamp\CapstoneProject\CapstoneProject-Backend\src\CrawlerService\obj\Debug\net7.0\CrawlerWorkerService.AssemblyInfo.cs
+C:\Users\HERO\UPrepo\UpSchool-FullStack-Development-Bootcamp\CapstoneProject\CapstoneProject-Backend\src\CrawlerService\obj\Debug\net7.0\CrawlerWorkerService.csproj.CoreCompileInputs.cache
+C:\Users\HERO\UPrepo\UpSchool-FullStack-Development-Bootcamp\CapstoneProject\CapstoneProject-Backend\src\CrawlerService\obj\Debug\net7.0\CrawlerWorkerService.dll
+C:\Users\HERO\UPrepo\UpSchool-FullStack-Development-Bootcamp\CapstoneProject\CapstoneProject-Backend\src\CrawlerService\obj\Debug\net7.0\refint\CrawlerWorkerService.dll
+C:\Users\HERO\UPrepo\UpSchool-FullStack-Development-Bootcamp\CapstoneProject\CapstoneProject-Backend\src\CrawlerService\obj\Debug\net7.0\CrawlerWorkerService.pdb

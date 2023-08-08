@@ -104,19 +104,11 @@ async Task Main()
     while (!valid)
     {
         Messages.PrintWelcomeMessage();
-        Console.WriteLine("How many products do you want to crawler? You can give a number or all options");
+        Messages.FirstMessage();
         var requestedAmount = Console.ReadLine();
-
-        Console.WriteLine("------------------------------------------------");
-        Console.WriteLine("What type of products do you want to crawler?");
-        Console.WriteLine("You can choose one option from three options");
-        Console.WriteLine("Please enter: A,B or C options.");
-        Console.WriteLine("A= All Products, B= On Sale Products, C= Regular Price Products");
+        Messages.ScrapingQuestion();
         var productCrawlType = Console.ReadLine().ToUpper();
-
-        Console.WriteLine("------------------------------------------------");
-        Console.WriteLine("Do you want to receive the crawled products by email?");
-        Console.WriteLine("Please enter 'Y' for Yes or 'N' for No:");
+        Messages.EmailMessage();
         var sendEmailOption = Console.ReadLine().ToUpper();
         bool sendEmail = sendEmailOption == "Y";
         await hubConnection.InvokeAsync("SendLogNotificationAsync", CreateLog("Welcome to the Crawler Log Page", Guid.Empty));
@@ -379,8 +371,7 @@ async Task Main()
         }
         #endregion
         #region Continue Product Scraping
-        Console.WriteLine("Do you want to continue product crawler? ");
-        Console.WriteLine("Please enter 'Y' for Yes or 'N' for No:");
+        Messages.ScrapingContinue();
         string answerContinueOption = Console.ReadLine().ToUpper();
         bool answerContinue = answerContinueOption == "N";
         if (answerContinue)
