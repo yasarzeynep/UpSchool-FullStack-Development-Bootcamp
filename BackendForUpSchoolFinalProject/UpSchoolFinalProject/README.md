@@ -28,6 +28,5 @@ In this final project, you must build a data crawler for a small e-commerce webs
 ![1](https://github.com/yasarzeynep/UpSchool-FullStack-Development-Bootcamp/assets/116646963/9226759e-3eef-4559-9b28-61d71a9f6113)
 ![2](https://github.com/yasarzeynep/UpSchool-FullStack-Development-Bootcamp/assets/116646963/ec922831-2127-4bbd-abd1-151b752958ff)
 
-### 👨‍💻 Project Status
-The project continues. Stay tuned 😎
+
 
